@@ -42,7 +42,7 @@ go mod tidy
 Your project structure should look like this:
 
 ```
-launcher/
+HREP_GO/
 ├── .gitignore
 ├── core.go
 ├── go.mod

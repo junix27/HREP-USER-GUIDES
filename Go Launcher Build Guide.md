@@ -1,5 +1,7 @@
 # Launcher Application
 
+> **Note:** If you already have the HREP LAUNCHER.exe application, you can skip this build guide and proceed directly to the [Launcher GUI User Guide](Launcher%20GUI%20User%20Guide.md) for instructions on how to configure and use the application.
+
 A protocol handler application that allows opening files with specific applications based on file extensions.
 
 ## Prerequisites

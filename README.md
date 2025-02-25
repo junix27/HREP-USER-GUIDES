@@ -25,15 +25,3 @@ If you're new to the system:
 1. Start with the appropriate user guides to understand the interfaces
 2. For administrators, review the configuration guides
 3. For developers, explore the developer's guides for implementation details
-
-## Contributing to Documentation
-
-To contribute to this documentation repository:
-
-1. Fork the repository
-2. Make your changes or additions
-3. Submit a pull request with a clear description of your updates
-
----
-
-For additional support, please contact the system administrator or development team.

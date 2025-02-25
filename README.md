@@ -4,13 +4,13 @@ Welcome to the project documentation repository. This central hub contains compr
 
 ## Available Guides
 
-### Development Guides
+### Developer's Guides
 
 - [**Go Launcher Build Developer's Guide**](Developer%20Guide/Go%20Launcher%20Build%20Developer's%20Guide%20.md) - Comprehensive instructions for building and deploying the protocol handler application that allows opening files with specific applications based on file extensions. Includes setup, building, and troubleshooting for Windows, macOS, and Linux platforms.
 
 - [**Template Form Generator Implementation Developer's Guide**](Developer%20Guide/Template%20Form%20Generator%20Developer's%20Guide.md) - Technical documentation for implementing a dynamic template-based form system. Covers database structure, backend PHP services, frontend implementation with JavaScript, and complete code examples for creating flexible data capture forms.
 
-### User Guides
+### User's Guides
 
 - [**Google SMTP Setup User's Guide**](User%20Guide/Google%20SMTP%20Setup%20User's%20Guide.md) - Step-by-step instructions for configuring Google email with SMTP for application email functionality. Includes creating a passkey, enabling 2-factor authentication, generating app passwords, and updating application configuration.
 

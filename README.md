@@ -1,6 +1,6 @@
-# Project Documentation Repository
+# User Guide Repository
 
-Welcome to the project documentation repository. This central hub contains comprehensive guides for various components of our system. Whether you're a developer, administrator, or end-user, you'll find detailed instructions for setup, configuration, and usage.
+Welcome to the user guide repository. This central hub contains comprehensive guides for various components of our system. Whether you're a developer, administrator, or end-user, you'll find detailed instructions for setup, configuration, and usage.
 
 ## Available Guides
 

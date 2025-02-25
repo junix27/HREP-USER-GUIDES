@@ -1,4 +1,4 @@
-# Setting Up Google Email with SMTP for Your Application
+# Setting Up Google Email with SMTP
 
 This guide walks you through setting up a Google email account with SMTP for use in your application's email functionality.
 

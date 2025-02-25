@@ -10,7 +10,7 @@ Welcome to the project documentation repository. This central hub contains compr
 
 - [**Template Form Generator Implementation Developer's Guide**](Developer%20Guide/Template%20Form%20Generator%20Developer's%20Guide.md) - Technical documentation for implementing a dynamic template-based form system. Covers database structure, backend PHP services, frontend implementation with JavaScript, and complete code examples for creating flexible data capture forms.
 
-### Configuration Guides
+### User Guides
 
 - [**Google SMTP Setup User's Guide**](User%20Guide/Google%20SMTP%20Setup%20User's%20Guide.md) - Step-by-step instructions for configuring Google email with SMTP for application email functionality. Includes creating a passkey, enabling 2-factor authentication, generating app passwords, and updating application configuration.
 

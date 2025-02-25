@@ -1,4 +1,4 @@
-# Dynamic Template Generator Implementation Guide
+# Dynamic Template Form Generator Implementation Guide
 
 ## 1. Database Structure
 

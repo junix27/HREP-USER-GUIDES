@@ -14,8 +14,6 @@ Welcome to the user guide repository. This central hub contains comprehensive gu
 
 - [**Google SMTP Setup User's Guide**](User%20Guide/Google%20SMTP%20Setup%20User's%20Guide.md) - Step-by-step instructions for configuring Google email with SMTP for application email functionality. Includes creating a passkey, enabling 2-factor authentication, generating app passwords, and updating application configuration.
 
-### User Guides
-
 - [**Launcher GUI User's Guide**](User%20Guide/Launcher%20GUI%20User's%20Guide.md) - End-user documentation for the LIRMDS Client Launcher application. Explains how to configure application paths, set up file associations, install the protocol handler, and troubleshoot common issues.
 
 - [**Templates Manager User's Guide**](User%20Guide/Templates%20Manager%20User's20Guide.md) - Detailed instructions for using the Templates Manager to build and manage JSON schema templates. Covers creating templates, managing sections and fields, configuring advanced field features, and testing/validating schemas.

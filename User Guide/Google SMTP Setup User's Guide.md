@@ -42,7 +42,7 @@ Once 2FA is enabled, you'll need to generate an app password for your applicatio
 5. Google will display a 16-character password - save this password as you'll need it for your configuration
 6. Click **Done**
 
-## Step 3: Configure Your Application
+## Step 3: Configure Your Application (For Developer/ Server Administrator)
 
 Navigate to your SYSTEM_FOLDER/src/ and update your `config.development.php` file with the following SMTP settings:
 

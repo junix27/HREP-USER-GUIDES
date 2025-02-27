@@ -55,7 +55,7 @@ Navigate to your SYSTEM_FOLDER/src/ and update your `config.development.php` fil
     "SERVER_USERNAME" => "your.email@gmail.com", // Your Gmail address
     "SERVER_PASSWORD" => "your-16-character-app-password-without-spaces", // The app password generated in Step 2 (space removed)
 ],
-"SENDER_EMAIL" => "no-reply@your-domain", // The sender email that will appear to recipients
+"SENDER_EMAIL" => "no-reply@your-domain.com", // The sender email that will appear to recipients
 ```
 
 Replace:

@@ -1,6 +1,6 @@
-#KOHA upgrade logs: 17.05 to 21.1200015
+##KOHA upgrade logs: 17.05 to 21.1200015
 
-```bash
+```
 Upgrade to 17.12.00.016 done (Bug 18336 - Convert DB tables to utf8mb4 🎁)
 Upgrade to 17.12.00.017 done (Bug 17672 - Add damaged_on to items and deleteditems tables)
 Upgrade to 17.12.00.018 done (Bug 19290 - Add system preference BrowseResultSelection)
@@ -582,9 +582,9 @@ Upgrade to 21.12.00.016  [21:36:34]: Bug 30060 - Update user_permissions to add 
         ERROR: {UNKNOWN}: DBI Exception: DBD::mysql::db do failed: Cannot add or update a child row: a foreign key constraint fails (`koha_library`.`#sql-alter-100-39`, CONSTRAINT `user_permissions_ibfk_2` FOREIGN KEY (`module_bit`, `code`) REFERENCES `permissions` (`module_bit`, `code`) ON DELETE CASCADE ON UPDATE CASCADE) at /usr/share/koha/lib/C4/Installer.pm line 743
 ```
 
-#KOHA upgrade logs: 21.1200015 to 23.0600052
+##KOHA upgrade logs: 21.1200015 to 23.0600052
 
-```bash
+```
 Upgrade to 21.12.00.016  [21:41:47]: Bug 30060 - Update user_permissions to add primary key and remove null option from code column
 Upgrade to 21.12.00.017  [21:41:47]: Bug 30128 - Change language_subtag_registry.description to varchar(255)
 Upgrade to 21.12.00.018  [21:41:47]: Bug 19532 - Add Recalls
@@ -1119,7 +1119,7 @@ Upgrade to 23.06.00.053  [21:42:00]: Bug 33970 - Bind ILL attributes to specific
 
 #Koha upgrade logs: 23.0600052 to 24.0600023
 
-```bash
+```
 Upgrade to 23.06.00.053  [21:45:17]: Bug 33970 - Bind ILL attributes to specific backends
 Upgrade to 23.06.00.054  [21:45:17]: Bug 33887 - Automatically fill the next hold with a automatic check in.
         Added new system preference 'AutomaticCheckinAutoFill'
@@ -1505,4 +1505,123 @@ Upgrade to 24.06.00.023  [21:45:22]: Bug 36757 - Notify assignee when a concern 
 Upgrade to 24.06.00.024  [21:45:22]: Bug 35044 - Add repeatable option to additional_fields
         Added repeatable column to additional_fields table
         ERROR: {UNKNOWN}: DBI Exception: DBD::mysql::db do failed: Can't DROP FOREIGN KEY `afv_fk`; check that it exists at /usr/share/koha/lib/C4/Installer.pm line 743
+```
+
+##KOHA upgrade logs: 24.0600023 to 24.1102000
+
+```
+0E0
+Upgrade to 24.06.00.025  [22:02:26]: Bug 26777 - Adds new system preferences 'OPACVirtualCard and 'OPACVirtualCardBarcode'
+        Added new system preference 'OPACVirtualCard'
+        Added new system preference 'OPACVirtualCardBarcode'
+Upgrade to 24.06.00.026  [22:02:26]: Bug 20411 - Remove StaffDetailItemSelection system preference
+        Removed system preference 'StaffDetailItemSelection'
+Upgrade to 24.06.00.027  [22:02:26]: Bug 27490 - Change language syspref to StaffInterfaceLanguages
+        Updated system preference 'language' to 'StaffInterfaceLanguages'
+Upgrade to 24.06.00.028  [22:02:26]: Bug 37757 - More robust handling of EmailFieldPrimary system preference values
+        Updated system preference 'EmailFieldPrimary'
+Upgrade to 24.06.00.029  [22:02:26]: Bug 37592 - Add creation_date, modification_date fields to bookings table
+        Added column 'bookings.creation_date'
+        Added column 'bookings.modification_date'
+Upgrade to 24.06.00.030  [22:02:26]: Bug 37601 - Add status column to bookings table
+        Added column 'bookings.status'
+Upgrade to 24.06.00.031  [22:02:26]: Bug 23685 - Add system preferences ReportsExportFormatODS and ReportsExportLimit
+        Added new system preferences 'ReportsExportFormatODS' and 'ReportsExportLimit'
+Upgrade to 24.06.00.032  [22:02:26]: Bug 37856 - Add column 'erm_usage_data_providers.service_platform'
+        Added column 'service_platformerm_usage_data_providers'
+Upgrade to 24.06.00.033  [22:02:26]: Bug 35655 - Add a way to disable RabbitMQ
+        Added new system preference 'JobsNotificationMethod'
+Upgrade to 24.06.00.034  [22:02:26]: Bug 37967 - Add auto renewal message_transport for phone
+        Added phone messaging transports for auto-renewals
+Upgrade to 24.06.00.035  [22:02:26]: Bug 37446 - Fix holdingbranch and homebranch facet labels
+        Updated search field configuration for holdingbranch and homebranch
+Upgrade to 24.06.00.036  [22:02:26]: Bug 37954 - Move holdings_barcodes setting to holdings_barcode
+        No settings for holdings_barcodes found
+        Removed settings for holdings_barcodes
+Upgrade to 24.06.00.037  [22:02:26]: Bug 36798 - Add 'SearchCancelledAndInvalidISBNandISSN' preference
+        Added new system preference 'SearchCancelledAndInvalidISBNandISSN'
+Upgrade to 24.06.00.038  [22:02:26]: Bug 36766 - Add command-line utility to SFTP a file to a remote server
+        Added new sample notices 'SFTP_FAILURE' and 'SFTP_SUCCESS'
+Upgrade to 24.06.00.039  [22:02:26]: Bug 28575 - Add a system preference to prevent refunds on lost items if the fee was paid more than a set number of days ago
+        Added new system preference 'NoRefundOnLostFinesPaidAge'
+Upgrade to 24.06.00.040  [22:02:26]: Bug 23295 - Automatically debar patrons if SMS or email notice fail
+        Added new system preference 'RestrictPatronsWithFailedNotices'
+        Added new system restriction type 'NOTICE_FAILURE_SUSPENSION'
+Upgrade to 24.06.00.041  [22:02:26]: Bug 30955 - Move existing list notices to new lists category
+        Moved SHARE_ACCEPT notice to lists module
+        Moved SHARE_INVITE notice to lists module
+        Moved LIST notice to lists module
+Upgrade to 24.06.00.042  [22:02:26]: Bug 37969 - Add nor language code
+        Added nor language code
+Upgrade to 24.06.00.043  [22:02:26]: Bug 38193 - Add cancellation_reason field to bookings table
+        Added column 'bookings.cancellation_reason'
+Upgrade to 24.06.00.044  [22:02:26]: Bug 28833 - Speed up holds queue builder via parallel processing
+        Added new system preference 'HoldsQueueParallelLoopsCount'
+Upgrade to 24.06.00.045  [22:02:26]: Bug 35906 - Add bookable column on itemtypes table
+        Added column 'itemtypes.bookable'
+        Updated column 'items.bookable' allow nullable
+        Updated column 'deleteditems.bookable' allow nullable
+Upgrade to 24.06.00.046  [22:02:26]: Bug 38222 - Add cancellation reasons to bookings
+        Added BOOKING_CANCELLATION authorised value category
+Upgrade to 24.06.00.047  [22:02:26]: Bug 35659 - OAI-PMH harvester
+        Added new table 'oai_servers'
+        Added new table 'import_oai_biblios'
+        Added new table 'import_oai_authorities'
+        Updated manage_search_targets permission description
+        Added OAI-PMH:HarvestEmailReport system preference
+        Added OAI_HARVEST_REPORT letter
+Upgrade to 24.06.00.048  [22:02:27]: Bug 33484 - Add state save as an option to datatables
+        Added column 'tables_settings.default_save_state'
+        Added column 'tables_settings.default_save_state_search'
+Upgrade to 24.06.00.049  [22:02:27]: Bug 38274 - Fix typo in Arabic language description
+        Updated Arabic language description
+Upgrade to 24.06.00.050  [22:02:27]: Bug 30648 - Store biblionumber of deleted records in old_reserves
+        Added column 'reserves.deleted_biblionumber'
+        Added column 'old_reserves.deleted_biblionumber'
+Upgrade to 24.06.00.051  [22:02:27]: Bug 14180 - Add system preference AlwaysLoadCheckoutsTable
+        Added new system preference 'AlwaysLoadCheckoutsTable'
+Upgrade to 24.06.00.052  [22:02:27]: Bug 35305 - Add XSLT for authority details display in staff interface
+        Added new system preference 'AuthorityXSLTDetailsDisplay'
+Upgrade to 24.06.00.053  [22:02:27]: Bug 37511 - Add a new column p_cs_precedes to the table currency
+        Added column 'currency.p_cs_precedes'
+Upgrade to 24.06.00.054  [22:02:27]: Bug 35570 - Update 'FreeForm' ILL backend to 'Standard'
+Upgrade to 24.06.00.055  [22:02:27]: Bug 33462 - Force password reset for new patrons entered by staff
+        Added new system preference 'ForcePasswordResetWhenSetByStaff'
+        Added column 'categories.force_password_reset_when_set_by_staff'
+Upgrade to 24.06.00.056  [22:02:27]: Bug 36822 - Sanitize borrowers.updated_on
+Upgrade to 24.06.00.057  [22:02:27]: Bug 22421 - Add issue constraints to accountlines
+        Added column 'accountlines.old_issue_id'
+        Added constraint 'accountlines.old_issues'
+        Updated 'accountlines.old_issue_id' from 'old_issues'
+        Fixed 'accountlines.issue_id' where missing from issues
+        Added constraint 'accountlines.issues'
+        Added old_issue_id to accountlines and set up appropriate constraints)
+Upgrade to 24.06.00.058  [22:02:27]: Bug 28633 - Add preferred_name to borrowers table
+        Added column 'borrowers.preferred_name'
+        Added column 'deletedborrowers.preferred_name'
+        Added column 'borrower_modifications.preferred_name'
+        Added 'preferred_name' to DefaultPatronSearchFields
+        Initially set 'preferred_name' to 'firstname'
+Upgrade to 24.06.00.059  [22:02:27]: Bug 37221 - Add new system preference OPACOverDrive
+        Added new system preference 'OPACOverDrive'
+Upgrade to 24.06.00.060  [22:02:27]: Bug 33766 - Add system preference to determine label of userid input on login form
+        Added new system preference 'OPACLoginLabelTextContent'
+Upgrade to 24.06.00.061  [22:02:27]: Bug 38011 - Add missing foreign key to subscription table
+        Added new foreign key 'subscription_ibfk_4'
+Upgrade to 24.06.00.062  [22:02:27]: Bug 34355 - Add a table to allow creation of MARC order accounts and a system preference to activate it
+        Added new table 'marc_order_accounts'
+        Added new system preference 'MarcOrderingAutomation'
+        Added new permission 'marc_order_manage'
+Upgrade to 24.06.00.063  [22:02:27]: Bug 33641 - Added issues.checkin_library and old_issues.checkin_library
+        Added column 'issues.checkin_library'
+        Added column 'old_issues.checkin_library'
+Upgrade to 24.06.00.064  [22:02:27]: Bug 38436 - Adjust column names for holdings tables in the table settings
+        Column names renamed
+Upgrade to 24.11.00.000  [22:02:27]: Koha 24.11.00 release
+Upgrade to 24.11.00.001  [22:02:27]: Bug 37292 - Add index on 'oauth_access_tokens.expires'
+        Added index on 'oauth_access_tokens.expires'
+Upgrade to 24.11.00.002  [22:02:27]: Bug 38522 - Increase erm_agreements.license_info length
+        Updated erm_agreements.license_info to mediumtext.
+Upgrade to 24.11.01.000  [22:02:27]: Koha 24.11.01 release
+Upgrade to 24.11.02.000  [22:02:27]: Koha 24.11.02 release
 ```

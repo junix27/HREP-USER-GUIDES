@@ -1,4 +1,6 @@
-##KOHA upgrade logs: 17.05 to 21.1200015
+# KOHA MIGRATION LOGS
+
+## Version 17.05 to 21.1200015
 
 ```
 Upgrade to 17.12.00.016 done (Bug 18336 - Convert DB tables to utf8mb4 🎁)
@@ -582,7 +584,7 @@ Upgrade to 21.12.00.016  [21:36:34]: Bug 30060 - Update user_permissions to add 
         ERROR: {UNKNOWN}: DBI Exception: DBD::mysql::db do failed: Cannot add or update a child row: a foreign key constraint fails (`koha_library`.`#sql-alter-100-39`, CONSTRAINT `user_permissions_ibfk_2` FOREIGN KEY (`module_bit`, `code`) REFERENCES `permissions` (`module_bit`, `code`) ON DELETE CASCADE ON UPDATE CASCADE) at /usr/share/koha/lib/C4/Installer.pm line 743
 ```
 
-##KOHA upgrade logs: 21.1200015 to 23.0600052
+## Version 21.1200015 to 23.0600052
 
 ```
 Upgrade to 21.12.00.016  [21:41:47]: Bug 30060 - Update user_permissions to add primary key and remove null option from code column
@@ -1117,7 +1119,7 @@ Upgrade to 23.06.00.053  [21:42:00]: Bug 33970 - Bind ILL attributes to specific
         ERROR: {UNKNOWN}: DBI Exception: DBD::mysql::db do failed: Can't DROP FOREIGN KEY `illrequestattributes_ifk`; check that it exists at /usr/share/koha/lib/C4/Installer.pm line 743
 ```
 
-#Koha upgrade logs: 23.0600052 to 24.0600023
+# Version 23.0600052 to 24.0600023
 
 ```
 Upgrade to 23.06.00.053  [21:45:17]: Bug 33970 - Bind ILL attributes to specific backends
@@ -1507,7 +1509,7 @@ Upgrade to 24.06.00.024  [21:45:22]: Bug 35044 - Add repeatable option to additi
         ERROR: {UNKNOWN}: DBI Exception: DBD::mysql::db do failed: Can't DROP FOREIGN KEY `afv_fk`; check that it exists at /usr/share/koha/lib/C4/Installer.pm line 743
 ```
 
-##KOHA upgrade logs: 24.0600023 to 24.1102000
+## Version 24.0600023 to 24.1102000
 
 ```
 0E0

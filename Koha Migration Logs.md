@@ -1509,7 +1509,7 @@ Upgrade to 24.06.00.024  [21:45:22]: Bug 35044 - Add repeatable option to additi
         ERROR: {UNKNOWN}: DBI Exception: DBD::mysql::db do failed: Can't DROP FOREIGN KEY `afv_fk`; check that it exists at /usr/share/koha/lib/C4/Installer.pm line 743
 ```
 
-## Version 24.0600023 to 24.1102000
+## Version 24.0600023 to 24.1102000 (Latest)
 
 ```
 0E0
